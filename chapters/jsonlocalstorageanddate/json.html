@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>json</title>
+  </head>
+  <body>
+    <script>
+      // let product = {
+      //   name: "pant",
+      //   price: 999,
+      //   rating: {
+      //     stars: "4.5 stars",
+      //     noOfReviews: 450,
+      //   },
+      // };
+      // console.log(typeof product);
+      // console.log(product);
+
+      // let str  = JSON.stringify( product);
+      // console.log(typeof str);
+      // console.log( str);
+
+      // let str1  = JSON.parse(str);
+      // console.log(typeof str1);
+      // console.log( str1);
+
+      let product = {
+        name: "pant",
+        price: 999,
+        rating: {
+          stars: "4.5 stars",
+          noOfReviews: 450,
+        },
+      };
+      localStorage.setItem('product', JSON.stringify(product));
+      let product2 = JSON.parse(localStorage.getItem('product'));
+      console.log(product2);
+      localStorage.removeItem('price');
+      localStorage.removeItem('anothername');
+      localStorage.clear();
+
+
+
+
+      // localStorage.setItem('name', 'sushovan bhattarai');
+      //  localStorage.setItem('anotherName', 'ankit bhattarai');
+    </script>
+  </body>
+</html>

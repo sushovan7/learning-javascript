@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else and boolean</title>
+  </head>
+  <body>
+    <script>
+      // let age = 66;
+      // let gender = 'male';
+      // let result;
+      // if(age < 5){
+      //   result = 'free ticket'
+      // }else if(age >= 5 && age <= 8){
+      //   result = 'ticket price is half'
+      // }else if (gender === 'female'){
+      //   result = '50% off in ticket'
+      // }else if (age >65){
+      //   result = '70% off in ticket';
+      // }
+      // console.log(result);
+
+      // let age = 4;
+      // let gender = "female";
+      // let result;
+      // if (gender === "female") {
+      //   result = "50% off in ticket";
+      // } else if (age < 5) {
+      //   result = "free ticket";
+      // } else if (age >= 5 && age <= 8) {
+      //   result = "price of ticket is half";
+      // }else if (age > 65){
+      //   result = '70% off in ticket'
+      // }else if(gender === 'female' && age < 5) {
+      //   result = 'free ticket';
+      // }
+      // console.log(result);
+
+
+       let age = 17;
+       let gender = 'male';
+       let discountAmount;
+       if(age< 5){
+        discountAmount = 100;
+       }else if (age > 65){
+        discountAmount = 70;
+       }
+       else if (gender === 'female' || age <=8){
+        discountAmount = 50;
+       }else {
+        discountAmount = 0;
+       }
+       console.log(`you got ${discountAmount} discount`);
+
+
+    </script>
+  </body>
+</html>

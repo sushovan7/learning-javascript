@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced functions</title>
+  </head>
+  <body>
+
+    <!-- <button class="btn">click me</button> -->
+    <script>
+      // let sum = function (num1,num2){
+      //   return num1+num2;
+      // };
+      // console.log(sum(4,5));
+
+      // let sum = function (num1,num2){
+      //   return num1+num2;
+      // };
+
+      // let sumOfThreeNumbers = function(num1,num2,num3,sumTwoNumbers){
+      //   let sum1 = sumTwoNumbers(num1,num2);
+      //   return sumTwoNumbers(sum1,num3);
+      // }
+      // console.log(sumOfThreeNumbers(1,6,3,sum));
+      // console.log(typeof sumOfThreeNumbers);
+
+      // let sum = (num1,num2) => {
+      //   return num1+num2;
+      // }
+      // console.log(sum(1,2))
+
+      // let square = num=> {
+      //   return num*num
+      // };
+      // console.log(square(4))
+
+      // let square = num => num*num;
+      // console.log(square(5))
+
+
+      
+      // let timerID = setTimeout (() => console.log('good morning sushovan'),4000);
+      // console.log('sushovan')
+      // console.log(timerID);
+      // clearTimeout(timerID);
+
+
+      // let alarm = ()=>console.log(`good morning sushovan . ${new Date()}`)
+      // let intervalId = setInterval(alarm,2000)
+      // setTimeout(()=> clearInterval(intervalId),10000);
+
+
+
+      // let selectedButton =document.querySelector('.btn');
+      // selectedButton.addEventListener('click',event => {
+      //   console.log('button is clicked');
+      // })
+
+
+      //  let selectedButton =document.querySelector('.btn');
+      //  let behaviour = event => {
+      //   console.log('button is clicked');
+      // }
+      // selectedButton.addEventListener('click',behaviour);
+
+      // let printHours = event => console.log(new Date().getHours());
+      // selectedButton.addEventListener('click',printHours);
+      // selectedButton.removeEventListener('click',behaviour)
+
+
+
+      // let foods =['bread','rice','meat','pizza'];
+      // foods.forEach(function(food){
+      //   console.log(food);
+      // })
+
+
+      //  let arr = [1,2,3,4,5,6,7,8,9,0];
+      //  let even = arr.filter((num,index)=>{
+      //   if(num %2===0){
+      //     return true;
+      //   }else {
+      //     return false;
+      //   }
+      //  })
+
+      //  let arr = [1,2,3,4,5,6,7,8,9,0];
+      //  let even = arr.filter((num,index)=>{
+      //   return num%2===0;
+      //  })
+      //  console.log(even);
+
+      let arr = [1,2,3,4,5];
+      let square = arr.map(num=>num*num)
+      console.log(square);
+
+
+
+    </script>
+  </body>
+</html>

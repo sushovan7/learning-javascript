@@ -1,0 +1,52 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body{
+  font-family: arial;
+}
+
+/* #main-heading{
+  text-align: center;
+ 
+} */
+
+#input-todo{
+ font-size: 15px;
+ padding: 10px 5px;
+}
+
+#input-date{
+  font-size: 15px;
+  padding: 10px 5px;
+ }
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 200px 120px 100px ;
+  text-align: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.btn-delete{
+  font-size: 15px;
+  padding: 10px 5px;
+  background-color: brown;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+
+ .btn-add{
+  font-size: 15px;
+  padding: 10px 5px;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+
